@@ -6,6 +6,7 @@ from kivy.uix.label import Label
 class MinhaApp(App):
     def build(self):
         # Layout principal
+
         layout = BoxLayout(orientation='vertical', padding=20)
         # slider
         slider = Slider(min=0, max=100, value=50, step=1)
@@ -23,7 +24,7 @@ class MinhaApp(App):
         return layout
 
     def atualizar_label(self, instance, valor):
-    # Atualiza o texto do Label com o valor inteiro atual do slider
+        # Atualiza o texto do Label com o valor inteiro atual do slider
         self.label.text = "Valor do Slider: {}".format(int(valor))
 
 
